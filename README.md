@@ -2,7 +2,7 @@
 
 A TI-BASIC program that computes the gain, dB and phase of an **inverting** or **non-inverting** op-amp stage whose input impedance (Zin) and feedback impedance (Zf) are built from series/parallel R, L and C — for a single frequency, or as a full Bode magnitude + phase plot.
 
-**中文:** 一个 TI-84 Plus CE 上的 TI-BASIC 程序。选择反相或同相运放,用串联/并联的 R、L、C 组成输入阻抗 Zin 和反馈阻抗 Zf,即可计算单个频率下的增益、dB 和相位,或绘制幅频 + 相频 Bode 图。
+ 一个 TI-84 Plus CE 上的 TI-BASIC 程序。选择反相或同相运放,用串联/并联的 R、L、C 组成输入阻抗 Zin 和反馈阻抗 Zf,即可计算单个频率下的增益、dB 和相位,或绘制幅频 + 相频 Bode 图。
 
 ---
 
