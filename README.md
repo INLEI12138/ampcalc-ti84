@@ -34,7 +34,7 @@ A TI-BASIC program that computes the gain, dB and phase of an **inverting** or *
 
 1. Send `AMPCALC.8xp` to the calculator with TI Connect CE (or copy `AMPCALC.txt` into a new program in the TI Connect CE editor and send that).
 2. Set **MODE** to `Degree` and `a+bi` (the program sets Degree itself; `a+bi` must be set manually).
-3. `PRGM` → `AMPCALC` → `ENTER`.
+3. `PRGM` → `AMPCALC` → `ENTER`. (The first two menus have a QUIT option, so you can always exit.)
 
 > TI Connect CE tip: if the transfer fails with "Calculator is Busy", exit the running program to the home screen first.
 

@@ -2,7 +2,10 @@ Degree
 ClrHome
 seq(0,K,1,12)→L₄
 "ZIN SER RZIN SER LZIN SER CZIN PAR RZIN PAR LZIN PAR CZF SER R ZF SER L ZF SER C ZF PAR R ZF PAR L ZF PAR C "→Str3
-Menu("OP-AMP","INVERTING",A,"NON-INVERTING",B)
+Menu("OP-AMP","INVERTING",A,"NON-INVERTING",B,"QUIT",QT)
+Lbl QT
+ClrHome
+Stop
 Lbl A
 1→T
 Goto C
@@ -21,7 +24,7 @@ L₄(9)→I
 L₄(10)→J
 L₄(11)→L
 L₄(12)→M
-Menu("SETUP","1 ENTER ZIN",Z1,"2 ENTER ZF",Z2,"3 VIEW/EDIT",VW,"4 FORMULA",FM,"5 RUN",GO)
+Menu("SETUP","1 ENTER ZIN",Z1,"2 ENTER ZF",Z2,"3 VIEW/EDIT",VW,"4 FORMULA",FM,"5 RUN",GO,"6 QUIT",QT)
 Lbl Z1
 1→V
 6→R
@@ -55,7 +58,7 @@ Goto EN
 Lbl EN
 For(X,V,V+R-1)
 ClrHome
-Disp "AMPCALC V22"
+Disp "AMPCALC V23"
 Disp sub(Str3,9*(X-1)+1,9)
 Disp "E.G. 10K 1UF 1NH","0 IF ABSENT"
 Input "",Str1
@@ -121,7 +124,7 @@ Pause
 Goto C
 Lbl GO
 √(0-1)→Y
-Menu("MODE","SINGLE FREQ",S,"BODE PLOT",P)
+Menu("MODE","SINGLE FREQ",S,"BODE PLOT",P,"BACK",C)
 Lbl S
 Input "FREQ HZ:",S
 {log(S),log(S)}→L₁
