@@ -144,42 +144,16 @@ The same Bode plot rendered on a PC with the same equations, for reference (not 
 
 ---
 
-## ZFORMULA — impedance formula reference
-
-A second, smaller program: a menu-driven cheat sheet for the impedance of two components in series or parallel.
-
-1. `PRGM` → `ZFORMULA` → `ENTER`
-2. Choose **SERIES** or **PARALLEL**
-3. Pick the first component (R / L / C), then the second from the remaining two
-4. The screen shows `Z(s)`, `Z(jw)`, `|Z|`, `∠Z` and the corner frequency `wc`, `fc` (for LC: resonance `w0`, `f0`). Press `ENTER` to return to the menu.
-
-Covers all six pairs: R–L, R–C, L–C, each in series and in parallel. `w` stands for ω (the calculator has no ω character).
-
-## ZFORMULA — 阻抗公式速查
-
-另一个小程序:用菜单查看两个元件串联或并联时的阻抗公式。
-
-1. 按 `PRGM` → 选 `ZFORMULA` → `ENTER`
-2. 选择 **SERIES**(串联)或 **PARALLEL**(并联)
-3. 先从 R / L / C 中选第一个元件,再从剩下两个中选第二个
-4. 屏幕显示 `Z(s)`、`Z(jw)`、`|Z|`、`∠Z` 以及转折频率 `wc`、`fc`(LC 组合显示谐振频率 `w0`、`f0`)。按 `ENTER` 回到菜单。
-
-共 6 种组合:R–L、R–C、L–C 的串联和并联。`w` 代表 ω(计算器没有 ω 字符)。
-
----
-
 ## Files
 
 - `AMPCALC.8xp` — program for the calculator
 - `AMPCALC.txt` — readable source (for the TI Connect CE editor)
-- `ZFORMULA.8xp` / `ZFORMULA.txt` — impedance formula reference program and its source
 - `images/` — circuit diagram and example plots
 
 ## 文件说明
 
 - `AMPCALC.8xp` — 可直接发送到计算器的程序
 - `AMPCALC.txt` — 可读的源码(用于 TI Connect CE 编辑器)
-- `ZFORMULA.8xp` / `ZFORMULA.txt` — 阻抗公式速查程序及其源码
 - `images/` — 电路图和示例图
 
 ---
