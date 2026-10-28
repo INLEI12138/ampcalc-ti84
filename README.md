@@ -42,6 +42,10 @@ Inverting RC low-pass: `Zin = R1 = 10K`, `Zf = R2 ∥ C2 = 100K ∥ 0.1UF`
 
 The calculator asks for one value per line. For ZIN enter `10K`, then `0` for the other five; for ZF enter `0, 0, 0` (series R, L, C), then `100K`, `0`, `0.1UF` (parallel R, L, C).
 
+![Example Bode plot](images/example_rc_lowpass.png)
+
+*Bode plot for the example above, computed with the same equations as the program (rendered on a PC, not a screenshot of the calculator).*
+
 ## Notes and limits / 注意事项
 
 - `F3DB` is only meaningful when the response is flat then drops/rises by 3 dB. For monotonically falling/rising responses or notch/resonance circuits it is just the first point 3 dB away from the start value.
