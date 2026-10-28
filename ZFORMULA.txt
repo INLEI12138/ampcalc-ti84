@@ -1,0 +1,44 @@
+Lbl M
+ClrHome
+Menu("IMPEDANCE Z","SERIES",S1,"PARALLEL",P1,"QUIT",Q)
+Lbl S1
+0→S
+Goto K
+Lbl P1
+1→S
+Lbl K
+Menu("PICK 1ST","R",K1,"L",K2,"C",K3,"BACK",M)
+Lbl K1
+Menu("R + ?","L",RL,"C",RC,"BACK",K)
+Lbl K2
+Menu("L + ?","R",RL,"C",LC,"BACK",K)
+Lbl K3
+Menu("C + ?","R",RC,"L",LC,"BACK",K)
+Lbl RL
+ClrHome
+If S:Goto 4
+Disp "R SERIES L","Z=R+sL","s=jw:","Z=R+jwL","|Z|=√(R²+(wL)²)","∠Z=tan⁻¹(wL/R)","wc=R/L","fc=R/(2πL)"
+Goto W
+Lbl 4
+Disp "R PARALLEL L","Z=R(sL)/(R+sL)","Z=sL/(1+sL/R)","s=jw:","Z=jwL/(1+jwL/R)","|Z|=wL/√(1+(wL/R)²)","∠Z=90°-tan⁻¹(wL/R)","wc=R/L","fc=R/(2πL)"
+Goto W
+Lbl RC
+ClrHome
+If S:Goto 5
+Disp "R SERIES C","Z=R+1/(sC)","Z=(1+sRC)/(sC)","s=jw:","Z=R-j/(wC)","|Z|=√(R²+(1/(wC))²)","∠Z=-tan⁻¹(1/(wRC))","wc=1/(RC)","fc=1/(2πRC)"
+Goto W
+Lbl 5
+Disp "R PARALLEL C","Z=R/(1+sRC)","s=jw:","Z=R/(1+jwRC)","|Z|=R/√(1+(wRC)²)","∠Z=-tan⁻¹(wRC)","wc=1/(RC)","fc=1/(2πRC)"
+Goto W
+Lbl LC
+ClrHome
+If S:Goto 6
+Disp "L SERIES C","Z=(1+s²LC)/(sC)","s=jw:","Z=j(wL-1/(wC))","|Z|=|(wL-1/(wC))|","∠Z=+90° (w>w0)","∠Z=-90° (w<w0)","w0=1/√(LC)","f0=1/(2π√(LC))"
+Goto W
+Lbl 6
+Disp "L PARALLEL C","Z=sL/(1+s²LC)","s=jw:","Z=jwL/(1-w²LC)","|Z|=wL/|1-w²LC|","∠Z=+90° (w<w0)","∠Z=-90° (w>w0)","w0=1/√(LC)","f0=1/(2π√(LC))"
+Lbl W
+Pause 
+Goto M
+Lbl Q
+ClrHome
