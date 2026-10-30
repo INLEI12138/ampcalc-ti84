@@ -58,7 +58,7 @@ Goto EN
 Lbl EN
 For(X,V,V+R-1)
 ClrHome
-Disp "AMPCALC V27"
+Disp "AMPCALC V28"
 Disp sub(Str3,9*(X-1)+1,9)
 Disp "E.G. 10K 1UF 1NH","0 IF ABSENT"
 Input "",Str1
@@ -255,6 +255,7 @@ A→Ymin
 B→Ymax
 D→Yscl
 PlotsOff 
+FnOff 
 DispGraph
 TextColor(14)
 For(K,0-int(0-Xmin),int(Xmax))
