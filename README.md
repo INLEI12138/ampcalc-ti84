@@ -130,7 +130,7 @@ The same Bode plot rendered on a PC with the same equations, for reference (not 
 
 - `F3DB` is only meaningful when the response is flat and then drops/rises by 3 dB. For monotonically falling/rising responses or notch/resonance circuits it is just the first point 3 dB away from the start value.
 - Corner frequencies up to 10^15 Hz are detected for the auto range (V25; earlier versions stopped at 1 GHz).
-- The summary page shows F3DB as `A*10^B` (scientific notation) so large frequencies fit on the screen (V26).
+- The summary page shows F3DB in scientific notation (e.g. `1.633911375E9`), temporarily switching to Sci mode (V27).
 - Ideal op-amp (infinite gain, no bandwidth limit); ideal R, L, C.
 - Auto range extends two decades beyond the detected corner frequencies, up to 300 points; large ranges take about a minute to draw. Use MANUAL to reduce the number of points.
 - Uses lists `L₁`–`L₆` and single-letter variables, so it will overwrite them.
@@ -140,7 +140,7 @@ The same Bode plot rendered on a PC with the same equations, for reference (not 
 
 - `F3DB` 只有在曲线先平坦、再下降/上升 3 dB 时才有意义。对于单调下降/上升的响应,或陷波/谐振电路,它只是第一个与起点相差 3 dB 的点。
 - 自动范围可检测到 10^15 Hz 以内的转折频率(V25;之前的版本只到 1 GHz)。
-- 汇总页的 F3DB 用 `A*10^B` 的科学计数法显示,频率很高时也能完整显示(V26)。
+- 汇总页的 F3DB 用科学计数法显示(例如 `1.633911375E9`),显示时临时切到 Sci 模式,之后恢复 Normal(V27)。
 - 按理想运放计算(增益无穷大、无带宽限制),R、L、C 也按理想元件处理。
 - 自动范围会在检测到的转折频率两侧各多取两个十倍频,最多 300 个点;范围很大时绘图大约需要一分钟。可以用 MANUAL 手动减少点数。
 - 程序会使用列表 `L₁`–`L₆` 和单字母变量,因此会覆盖它们原有的内容。
