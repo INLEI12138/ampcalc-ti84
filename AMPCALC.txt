@@ -58,7 +58,7 @@ Goto EN
 Lbl EN
 For(X,V,V+R-1)
 ClrHome
-Disp "AMPCALC V25"
+Disp "AMPCALC V26"
 Disp sub(Str3,9*(X-1)+1,9)
 Disp "E.G. 10K 1UF 1NH","0 IF ABSENT"
 Input "",Str1
@@ -282,4 +282,9 @@ TextColor(12)
 ClrHome
 Disp "DB START,END",round(G,2),round(H,2)
 Disp "DEG START,END",round(I,2),round(L,2)
-Disp "F3DB HZ",round(M,2)
+If M>0:Then
+int(log(M))→W
+Disp "F3DB HZ=A*10^B",round(M/10^W,4),W
+Else
+Disp "F3DB HZ",0
+End
