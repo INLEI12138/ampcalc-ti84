@@ -58,7 +58,7 @@ Goto EN
 Lbl EN
 For(X,V,V+R-1)
 ClrHome
-Disp "AMPCALC V23"
+Disp "AMPCALC V25"
 Disp sub(Str3,9*(X-1)+1,9)
 Disp "E.G. 10K 1UF 1NH","0 IF ABSENT"
 Input "",Str1
@@ -149,7 +149,7 @@ seq(0,K,1,16)→L₅
 ((G+J)*(C+F)>0)/(2π((G+J)*(C+F)+((G+J)*(C+F)=0)))→L₅(14)
 ((A+D)*(H+L)>0)*(A+D)/(2π((H+L)+((H+L)=0)))→L₅(15)
 ((G+J)*(B+E)>0)*(G+J)/(2π((B+E)+((B+E)=0)))→L₅(16)
-L₅*(L₅<10^9)→L₅
+L₅*(L₅<10^15)→L₅
 max(L₅)→U
 0→S
 If U>0:min(L₅+10^99*(L₅=0))→S
